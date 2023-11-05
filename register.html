@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA=compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial scale=1.0">
+        <meta name="description" content="this is an ecommerce project">
+        <link rel="stylesheet"href="style.css">
+    </head>
+
+      <!--nevbar start here-->
+      <i class="fa-solid fa-bars"id="menu-icon"></i>
+      <nav id="menu"class="hidden">
+          <ul class="upper-navbar flex-space-around" >
+          <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+          <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+          <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+          <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+          <li class="nav_list"><a href="contact.html" class="nav_link">contact</a></li>
+          <li class="nav_list"><a href="profile.html" class="nav_link">
+              <img class="profile-icon" src="rr .png" alt="profile icon">
+          </a></li>
+      </ul>
+      <ul class="lower-nav flex-space-around">
+          <li class="nav_list"><a href="/index.html" class="nav_brand_link">Rafi Express</a></li>
+
+          <li class="nav_list"><a href="/cart.html"class="nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span>cart 2 products-$200</a></li>
+      </ul>
+  </nav>
+     <!--nevbar end here-->
+     <main>
+        <section class="register">
+            <h2 class="section-title text-center">User Registration</h2>
+            <div class="card">
+                <form action="" class="form">
+                    <div class="form-control flex-center">
+                       <lavel for="name">Name:</lavel> 
+                       <input type="name"id="name"requered autocomplete="name">
+                    </div>
+                    <div class="form-control flex-center">
+                        <lavel for="email">Email:</lavel> 
+                        <input type="email"id="email"requered autocomplete="email">
+                     </div>
+                     <div class="form-control flex-center">
+                        <lavel for="pass">Password:</lavel> 
+                        <input type="pass"id="pass"requered autocomplete="pass">
+                     </div>
+                     <div class="form-control flex-center">
+                        <lavel for="about">About Me:</lavel>
+                        <textarea name="about"id="about"></textarea>
+                     </div>
+                     <div class="form-control flex-center form-btn-field">
+                       <button type="submit" class="btn contact-btn">Submit</button>
+                     </div>
+                </form>
+            </div>
+        </section>
+     </main>
+     <!--footer starts here-->
+<footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <lavel for="subscribe">subscribe to newsleter:</lavel>
+        <input type="email"id="subscribe"name="subscribe"class="footer_input"placeholder="your Email Address">
+        <button class="footer-button subscribe">subscribe</button>
+    </div>
+
+    <div>
+        <P>&COPY; Copyright 2023 Rafi Express.All right rserved</P>
+    </div>
+</footer>
+       <!--footer end here-->

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA=compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial scale=1.0">
+        <meta name="description" content="this is an ecommerce project">
+        <link rel="stylesheet"href="style.css">
+        <!--font awesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font awesome cdn-->
+        <title>ecommerce project</title>
+    </head>
+    <body>
+        <!--nevbar start here-->
+        <i class="fa-solid fa-bars"id="menu-icon"></i>
+        <nav id="menu"class="hidden">
+            <ul class="upper-navbar flex-space-around" >
+            <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+            <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+            <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+            <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+            <li class="nav_list"><a href="contact.html" class="nav_link">contact</a></li>
+            <li class="nav_list"><a href="profile.html" class="nav_link">
+                <img class="profile-icon" src="rr .png" alt="profile icon">
+            </a></li>
+        </ul>
+        <ul class="lower-nav flex-space-around">
+            <li class="nav_list"><a href="index.html" class="nav_brand_link">Rafi Express</a></li>
+
+            <li class="nav_list"><a href="cart.html"class="nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span>cart 2 products-$200</a></li>
+        </ul>
+    </nav>
+       <!--nevbar end here-->
+       
+       <!--header start here-->
+       <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="title" behavior="" direction="">50% sales off  </marquee>
+            <div class="features flex-space-around">
+                <article class="feature flex-center"><i class="fa-solid fa-truck-fast feature_icon"></i>
+                <h3>shipping within 7 days</h3>
+                </article>
+                <article class="feature flex-center"><i class="fa-brands fa-rocketchat"></i>
+                    <h3>support 24/7</h3>
+                    </article>
+                    <article class="feature flex-center"><i class="fa-brands fa-cc-visa"></i>
+                        <h3>fast payment</h3>
+                        </article>  
+            </div>
+        </div>
+       </header>
+       <!--header end here-->
+       <main class="flex-center">
+        <div class="sidebar">
+            <section class="catagories-section">
+                <h3 class="section-title">catagories</h3>
+                <ul class="list">
+                    <li class="list_item">
+                        <lavel for="phone">
+                            <input type="checkbox" name="phone"id="phone" value="phone">phone
+                        </lavel>
+                    </li>
+                    <li class="list_item">
+                        <lavel for="tablets">
+                            <input type="checkbox" name="tablets"id="tablets value="tablets">tablets
+                        </lavel>
+                    </li>
+                    <li class="list_item">
+                        <lavel for="television">
+                            <input type="checkbox" name="television"id="tablets value="television">television
+                        </lavel>
+                    </li>
+                    <li class="list_item">
+                        <lavel for="laptop">
+                            <input type="checkbox" name="laptop"id="laptop" value="laptop">laptop
+                        </lavel>
+                    </li>
+                    <li class="list_item">
+                        <lavel for="headphones">
+                            <input type="checkbox" name="headphones"id="headphones" value="headphones">headphones
+                        </lavel>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="price-section">
+             <h3 class="section-title">Price Range</h3> 
+             <ul class="list">
+                <li class="list-item">
+                    <lavel for="price1">
+                        <input type="checkbox"id="price1"name="price1"valu="price1">0$-20$
+                    </lavel>
+                </li>
+                <li class="list-item">
+                    <lavel for="price1">
+                        <input type="checkbox"id="price1"name="price1"valu="[0,20]">0$-20$
+                    </lavel>
+                </li>
+                <li class="list-item">
+                    <lavel for="price2">
+                        <input type="checkbox"id="price2"name="price2"valu="[21,40]">21$-40$
+                    </lavel>
+                </li>
+                <li class="list-item">
+                    <lavel for="price3">
+                        <input type="checkbox"id="price3"name="price3"valu="[41-80]]">41$-80$
+                    </lavel>
+                </li>
+                <li class="list-item">
+                    <lavel for="price4">
+                        <input type="checkbox"id="price4"name="price4"valu="[81-120]">81$-120$
+                    </lavel>
+                </li>
+             </ul>  
+            </section>
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping Options</h3>
+                <ul class="list">
+                    <li class="list-item">
+                        <lavel for="free">
+                            <input type="radio"name="shipping"id="free" value="free">free
+                        </lavel>
+                    </li>
+                    <li class="list-item">
+                        <lavel for="paid">
+                            <input type="radio"name="shipping"id="paid"value="paid">Paid
+                        </lavel>
+                    </li>
+                </ul>
+
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="action_sort">
+                    <lavel for="sort">Sort By:</lavel>
+                    <select name="sort"id="sort">
+                        <option value="solid">most sold first</option>
+                        <option value="rating">most rated first</option>
+                        <option value="price">cheapest first</option>
+                        <option value="arrival">newest first</option>
+                        <option value="discount">biggest discount first</option>
+                    </select>
+                </div>
+                <div class="action_search">
+                  <input type="text"placeholder="search product">
+                  <button class="btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>  
+                </div>
+            </section>
+        <!--product section start here-->
+        <section class="products">
+
+            <article class="product card">
+              <div class="badge">
+                <span>5 in stock</span>
+                <hr class="hr-design">
+                <span>3 sold</span>
+              </div>
+              <img class="product_img" src="./product1.jpg"alt="product1">
+              <div class="product_body">
+                <h3 class="product_name">Sony v-4 Headphone</h3>
+                <p>
+                    <span class="dot green"></span>
+                    <span class="dot black"></span>
+                    <span class="dot red"></span>
+                </p>
+                <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                <h4 class="product_price">215$</h4>
+                <p class="product_rating">Rating:4.5/5</p>
+                <button class="btn product_button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product card">
+                <div class="badge">
+                  <span>2 in stock</span>
+                  <hr class="hr-design">
+                  <span>9 sold</span>
+                </div>
+                <img class="product_img" src="./product2.jpg"alt="product2">
+                <div class="product_body">
+                  <h3 class="product_name">Apple Smart Watch</h3>
+                  <p>
+                      <span class="dot green"></span>
+                      <span class="dot black"></span>
+                      <span class="dot red"></span>
+                  </p>
+                  <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                  <h4 class="product_price">515$</h4>
+                  <p class="product_rating">Rating:4.2/5</p>
+                  <button class="btn product_button">Add to cart</button>
+                </div>
+              </article>
+
+              <article class="product card">
+                <div class="badge">
+                  <span>2 in stock</span>
+                  <hr class="hr-design">
+                  <span>12 sold</span>
+                </div>
+                <img class="product_img" src="./product3.jpg"alt="product3">
+                <div class="product_body">
+                  <h3 class="product_name">Air Pods</h3>
+                  <p>
+                      <span class="dot green"></span>
+                      <span class="dot black"></span>
+                      <span class="dot red"></span>
+                  </p>
+                  <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                  <h4 class="product_price">75$</h4>
+                  <p class="product_rating">Rating:4.1/5</p>
+                  <button class="btn product_button">Add to cart</button>
+                </div>
+              </article>
+              <article class="product card">
+                <div class="badge">
+                  <span>5 in stock</span>
+                  <hr class="hr-design">
+                  <span>3 sold</span>
+                </div>
+                <img class="product_img" src="./product1.jpg"alt="product1">
+                <div class="product_body">
+                  <h3 class="product_name">Sony v-4 Headphone</h3>
+                  <p>
+                      <span class="dot green"></span>
+                      <span class="dot black"></span>
+                      <span class="dot red"></span>
+                  </p>
+                  <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                  <h4 class="product_price">215$</h4>
+                  <p class="product_rating">Rating:4.5/5</p>
+                  <button class="btn product_button">Add to cart</button>
+                </div>
+              </article>
+  
+              <article class="product card">
+                  <div class="badge">
+                    <span>2 in stock</span>
+                    <hr class="hr-design">
+                    <span>9 sold</span>
+                  </div>
+                  <img class="product_img" src="./product2.jpg"alt="product2">
+                  <div class="product_body">
+                    <h3 class="product_name">Apple Smart Watch</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                    <h4 class="product_price">515$</h4>
+                    <p class="product_rating">Rating:4.2/5</p>
+                    <button class="btn product_button">Add to cart</button>
+                  </div>
+                </article>
+  
+                <article class="product card">
+                  <div class="badge">
+                    <span>2 in stock</span>
+                    <hr class="hr-design">
+                    <span>12 sold</span>
+                  </div>
+                  <img class="product_img" src="./product3.jpg"alt="product3">
+                  <div class="product_body">
+                    <h3 class="product_name">Air Pods</h3>
+                    <p>
+                        <span class="dot green"></span>
+                        <span class="dot black"></span>
+                        <span class="dot red"></span>
+                    </p>
+                    <p class="product_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, id!...<a href="product.html" class="learn-more">Learn More</a></p>
+                    <h4 class="product_price">75$</h4>
+                    <p class="product_rating">Rating:4.1/5</p>
+                    <button class="btn product_button">Add to cart</button>
+                  </div>
+                </article>
+        </section>
+        <div class="pagination">
+            <button class="btn pagination_btn">
+                <i class="fa-solid fa-less-than"></i>
+            </button>
+            <button class="btn pagination_btn">2</button>
+            <button class="btn pagination_btn">3</button>
+            <button class="btn pagination_btn">4</button>
+            <button class="btn pagination_btn">5</button>
+            <button class="btn pagination_btn">6</button>
+            <button class="btn pagination_btn">7</button>
+            <button class="btn pagination_btn">8</button>
+            <button class="btn pagination_btn">9</button>
+            <button class="btn pagination_btn">10</button>
+            <button class="btn pagination_btn">...</button>
+            <button class="btn pagination_btn">50</button>
+            <button class="btn pagination_btn">
+                <i class="fa-solid fa-greater-than"></i>
+            </button>
+        </div>
+        <!--product section end here -->    
+        </div>
+       </main>
+       <!--footer starts here-->
+<footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <lavel for="subscribe">subscribe to newsleter:</lavel>
+        <input type="email"id="subscribe"name="subscribe"class="footer_input"placeholder="your Email Address">
+        <button class="footer-button subscribe">subscribe</button>
+    </div>
+
+    <div>
+        <P>&COPY; Copyright 2023 Rafi Express.All right rserved</P>
+    </div>
+</footer>
+       <!--footer end here-->
+
+
+       <script src="index.js"></script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lange="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA=compatible"content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial scale=1.0">
+        <meta name="description" content="this is an ecommerce project">
+        <link rel="stylesheet"href="style.css">
+        <!--font awesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--font awesome cdn-->
+    </head>
+
+      <!--nevbar start here-->
+      <i class="fa-solid fa-bars"id="menu-icon"></i>
+      <nav id="menu"class="hidden">
+          <ul class="upper-navbar flex-space-around" >
+          <li class="nav_list"><a href="index.html" class="nav_link">Home</a></li>
+          <li class="nav_list"><a href="register.html" class="nav_link">Register</a></li>
+          <li class="nav_list"><a href="login.html" class="nav_link">Login</a></li>
+          <li class="nav_list"><a href="index.html" class="nav_link">Logout</a></li>
+          <li class="nav_list"><a href="contact.html" class="nav_link">contact</a></li>
+          <li class="nav_list"><a href="profile.html" class="nav_link">
+              <img class="profile-icon" src="rr .png" alt="profile icon">
+          </a></li>
+      </ul>
+      <ul class="lower-nav flex-space-around">
+          <li class="nav_list"><a href="/index.html" class="nav_brand_link">Rafi Express</a></li>
+
+          <li class="nav_list"><a href="/cart.html"class="nav_link"><span><i class="fa-solid fa-cart-shopping"></i></span>cart 2 products-$200</a></li>
+      </ul>
+  </nav>
+     <!--nevbar end here-->
+     <main class="">
+        <div class="cart ">
+            <div class="cart_items">
+                <div class="cart_payment">
+                    <div class="cart_items-heading card">
+                        <h2>shopping cart [2 items]</h2>
+                    <div class="cart_items-action">
+                        <lavel for="select">
+                            <input type="checkbox"name="select"id="select">
+                            Select all items
+                        </lavel>
+                        <button class="btn">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                        <button class="btn">Shop More</button>
+                    </div>
+                    </div>
+
+                </div>
+                <div class="cart_item card flex-space-around">
+                    <input type="checkbox" name="" id=""/>
+
+                    <img src="product3.jpg"alt="product3"class="cart_item-img"/>
+
+                    <div class="cart_item-description">
+                        <h3 class="product_name">Air pods</h3>
+                        <h4 class="product_price">Price:115$</h4>
+                        <p class="cart_item-shipping">Shipping coast:5.50$</p>
+                    </div>
+
+                    <div class="cart_item-actions">
+                        <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+
+                    <div>
+                        <button class="btn"><i class="fa-solid fa-add"></i></button>
+                        <span>1</span>
+                        <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cart_item card flex-space-around">
+                <input type="checkbox" name="" id="">
+                <img src="product1.jpg"alt="product1"class="cart_item-img">
+                <div class="cart_item-description">
+                    <h3 class="product_name">Sony v-4 Headphone</h3>
+                    <h4 class="product_price">Price:215$</h4>
+                    <p class="cart_item-shipping">Free Shipping</p>
+                </div>
+                <div class="cart_item-actions">
+                    <button class="btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+                <div>
+                    <button class="btn"><i class="fa-solid fa-add"></i></button>
+                    <span>3</span>
+                    <button class="btn"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="cart_payment">
+            <div class="cart_payment-summary card">
+                <h2>Payment Summary</h2>
+                <div>
+                    <p>sub total:</p>
+                    <p>214.55$</p>
+                </div>
+                <div>
+                    <p>shipping coast:</p>
+                    <p>4.44$</p>
+                </div>
+            <div>
+                <p>total coast:</p>
+                <p>341.44$</p>
+            </div>
+            <button class="btn cart_payment-btn">pay now</button>
+        </div>
+        <div class="cart_payment-methods card">
+            <h2>payment methods</h2>
+            <div>
+                <i class="fa-brands fa-cc-visa fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-amex fa-3x"></i>
+                <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                <i class="fa-brands fa-cc-bkash-pay fa-3x"></i>
+            </div>
+        </div>
+    </div>
+     </main>
+      <!--footer starts here-->
+<footer class="footer flex-space-around">
+    <div class="flex-space-around">
+        <lavel for="subscribe">subscribe to newsleter:</lavel>
+        <input type="email"id="subscribe"name="subscribe"class="footer_input"placeholder="your Email Address">
+        <button class="footer-button subscribe">subscribe</button>
+    </div>
+
+    <div>
+        <P>&COPY; Copyright 2023 Rafi Express.All right rserved</P>
+    </div>
+</footer>
+       <!--footer end here--> 
